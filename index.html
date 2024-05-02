@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Multiplication Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Matrix Multiplication Calculator</h1>
+    <form id="matrix-form">
+        <label for="matrix1-rows">Matrix 1 Rows:</label>
+        <input type="number" id="matrix1-rows" name="matrix1-rows" required><br>
+        <label for="matrix1-cols">Matrix 1 Columns:</label>
+        <input type="number" id="matrix1-cols" name="matrix1-cols" required><br><br>
+        <label for="matrix2-rows">Matrix 2 Rows:</label>
+        <input type="number" id="matrix2-rows" name="matrix2-rows" required>
+        <label for="matrix2-cols">Matrix 2 Columns:</label>
+        <input type="number" id="matrix2-cols" name="matrix2-cols" required><br>
+        <button type="button" onclick="generateMatrixInputs()">Generate Matrices</button>
+        <div id="matrix-inputs" class="matrix-container"></div>
+        <button type="button" onclick="calculateResult()">Calculate</button>
+    </form>
+    <div id="result">Result:</div>
+    </div>
+</body>
+</html>
